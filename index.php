@@ -169,9 +169,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $msg = '<span style="color:green">SUCCESSFUL!!!</span>';
     else
       $msg = '<span style="color:red">CAPTCHA FAILED!!!</span>';
-  else{
-    $msg = '<span style="color:red">CAPTCHA FAILED!!!</span>';
-  }
+
   ?>
 
   <div class="container my-4">
@@ -228,21 +226,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <div>
         <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn" value="submit">Submit</button>
       </div>
-      <!-- <tr>
-        <td align="right" valign="top"> Validation code:</td>
-        <td><img src="captcha.php?rand=<?php //echo rand(); 
-                                        ?>" id='captchaimg'><br>
-          <label for='message'>Enter the code above here :</label>
-          <br>
-          <input id="captcha_code" name="captcha_code" type="text">
-          <br>
-          Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh.
-        </td>
-      </tr>
-      <tr>
-        <td> </td>
-        <td><input name="Submit" type="submit" onclick="return validate();" value="Submit" class="button1"></td>
-      </tr> -->
+
 
     </form>
   </div>
